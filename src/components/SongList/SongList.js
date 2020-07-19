@@ -1,6 +1,7 @@
 import React from "react";
 import Song from "./Song";
 import songData from "../../data.json";
+import "./Song.scss";
 
 const SongList = () => {
     return (
