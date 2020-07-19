@@ -1,6 +1,6 @@
 import React from "react";
 import SongList from "../SongList";
-import "./App.css";
+import "./App.scss";
 
 const App = () => {
     return <div className="App">
