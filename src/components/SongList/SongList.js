@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Song from "./Song";
+import SongNumber from "./SongNumber";
 import songData from "../../data.json";
 import "./Song.scss";
 
@@ -17,6 +18,7 @@ const SongList = () => {
 
     return (
         <div className="SongList">
+            <SongNumber current={obtained.length} max={Object.entries(songData).length} />
             {Object.entries(songData).map((values, key) => {
                 const number = values[0];
                 const data = values[1];
@@ -32,7 +34,6 @@ const SongList = () => {
                     />
                 );
             })}
-            <div className="SongList-number">{obtained.length}</div>
         </div>
     );
 };
