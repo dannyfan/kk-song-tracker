@@ -11,9 +11,7 @@ const SongList = () => {
     const [obtained, setObtained] = useState(initialSongs);
 
     useEffect(() => {
-        if (obtained >= 1) {
-            localStorage.setItem("songs", JSON.stringify(obtained));
-        }
+        localStorage.setItem("songs", JSON.stringify(obtained));
     });
 
     return (

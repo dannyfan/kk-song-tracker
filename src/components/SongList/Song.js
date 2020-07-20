@@ -14,6 +14,7 @@ const Song = (props) => {
                 props.obtained.filter((number) => number !== props.number)
             );
         }
+        localStorage.setItem("songs", JSON.stringify(props.obtained));
     };
 
     return (
