@@ -8,12 +8,8 @@ const Song = (props) => {
     const haveSong = (event) => {
         setChecked(event.target.checked);
         if (event.target.checked) {
-            console.log("add");
-            console.log(props.obtained);
             props.setObtained((prevArray) => [...prevArray, props.number]);
         } else {
-            console.log("remove");
-            console.log(props.obtained);
             props.setObtained(
                 props.obtained.filter((number) => number !== props.number)
             );
